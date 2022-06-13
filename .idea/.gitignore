@@ -1,0 +1,9 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# These are some commands for run the Things
+# First we need to run the zoopkeeper after that run kafka server by following commands
+#1--> zookeeper-server-start.bat config\zookeeper.properties
+#2--> kafka-server-start.bat config\server.properties
+#now run the following command to check whether it's printing the same message or not
+# kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic java_in_use_topic --from-beginning
